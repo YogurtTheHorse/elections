@@ -10,6 +10,7 @@ function App() {
     return <Layout>
         <Route exact path='/' component={MainPage}/>
         <Route exact path='/short' component={ShortPage}/>
+        <Route path="*" component={MainPage} />
     </Layout>;
 }
 

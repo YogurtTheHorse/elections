@@ -25,11 +25,13 @@ body {
   }
 }
 
-.page-content {
+.page-content, .legal {
   max-width: 732px !important;
-  padding-top: 120px;
   font-size: 1.1em;
+}
 
+.page-content {
+  padding-top: 120px;
 }
 
 .hr-img {

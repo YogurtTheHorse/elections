@@ -1,7 +1,14 @@
 import {Col, Container, Nav, Navbar, Row} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
+import { useLocation } from "react-router-dom";
 
 export const Layout = ({children}: React.PropsWithChildren<{}>) => {
+    const location = useLocation();
+
+    const isShort = location.pathname === '/short';
+    const menuLinkName = (isShort ? 'Длинно' : 'Кратко')
+    const menuLink = (isShort ? '/' : '/short')
+
     return <>
         <Navbar bg="transparent" expand="lg" fixed="top" className="">
             <Container fluid>
@@ -15,21 +22,18 @@ export const Layout = ({children}: React.PropsWithChildren<{}>) => {
                         />
                     </Navbar.Brand>
                 </LinkContainer>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
-                        <LinkContainer to="/short">
-                            <Nav.Link>Кратко</Nav.Link>
-                        </LinkContainer>
-                    </Nav>
-                </Navbar.Collapse>
+                <Nav className="ms-auto">
+                    <LinkContainer to={menuLink}>
+                        <Nav.Link>{menuLinkName}</Nav.Link>
+                    </LinkContainer>
+                </Nav>
             </Container>
         </Navbar>
 
         {children}
 
-        <Container className="page-content legal">
-            <Row>
+        <Container className="legal">
+            <Row className="pt-2">
                 <Col>
                     <img className="hr-img d-block" src="img/hr.png" alt="hr"/>
 

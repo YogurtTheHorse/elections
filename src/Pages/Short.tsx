@@ -1,8 +1,8 @@
-import {Col, Container, Row} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 
 export const ShortPage = () => {
     return <Container className="page-content">
-        <Row className="mt-5">
+        <Row className="">
             <img className="w-50 mx-auto" src="img/brief.png" alt="Картинкагде щит ИС защищает студентов"/>
             <ul>
                 <li>
@@ -44,6 +44,9 @@ export const ShortPage = () => {
             <p>
                 Для связи со мной: <a href="https://t.me/yogurtthehorse">телеграм</a>, <a
                     href="https://vk.com/yogurtthehorse">вк</a> и <a href="mailto:yegor@yogurtthehor.se">почта</a> (???).
+            </p>
+            <p className="text-center">
+                Расскажите о нас своим друзьям :)
             </p>
         </Row>
     </Container>;

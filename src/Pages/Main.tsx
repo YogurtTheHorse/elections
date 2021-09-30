@@ -25,13 +25,13 @@ export const MainPage = () => {
         </Row>
         <Row className="mt-5">
             <p>
-                Эти выборы могут сильно поменять то, как работает Совет обучающихся. Если вам все равно, и
-                вы не хотите читать полностью — прочтите <Link to="/short">краткие тезисы</Link>. Если вы хотите
+                Эти выборы могут сильно поменять то, как работает Совет обучающихся. Если большой текст не для вас —
+                прочтите <Link to="/short">краткие тезисы</Link>. Если вы хотите
                 весь рассказ — приступим.
             </p>
 
         </Row>
-        <Row className="title mt-5">
+        <Row className="title">
             <p className="show-you text-center mb-0">Покажем вам</p>
             <p className="itmo-students text-center">ITMO.STUDENTS</p>
         </Row>
@@ -95,20 +95,23 @@ export const MainPage = () => {
             <TeamMember image="img/portraits/arseniy_1.png" sub="Сеня Молодецкий"/>
             <TeamMember image="img/portraits/annchouss.png" sub="Аня Мирная"/>
             <TeamMember image="img/portraits/nastya.png" sub="Настя Тушканова"/>
+            <TeamMember image="img/portraits/yogurt.png" sub="Егор Жумиков"/>
         </Row>
         <Row>
             <p>
                 Если вам все это интересно, интересна наша команда и вы думаете, что все это важно – мы будем ждать ваш
-                решающий голос за меня (Егора) и мою команду на выборах с 19 по 21 октября.
-                Comment
+                решающий голос за меня (Егора) и мою команду на выборах с 19 по 21 октября. А еще очень важно рассказывать
+                о нас своим знакомым.
             </p>
 
             <p>
-                Все подробности кампании будут в специальном <a href="https://t.me/yogurttheelections">телеграм канале</a>.
+                Все подробности кампании будут в специальном <a href="https://t.me/yogurttheelections">телеграм
+                канале</a>.
             </p>
 
             <p>
-                Если вы хотите у меня что-то узнать, то напишите мне в <a href="https://t.me/yogurtthehorse">телеграме</a>, <a
+                Если вы хотите у меня что-то узнать, то напишите мне в <a
+                href="https://t.me/yogurtthehorse">телеграме</a>, <a
                 href="https://vk.com/yogurtthehorse">вк</a> и <a href="mailto:yegor@yogurtthehor.se">на почту</a> (???).
             </p>
         </Row>
