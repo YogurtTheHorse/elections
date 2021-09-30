@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Sarcasm Ink';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fnt/SarcasmInk.otf") format("opentypw"), url("fnt/SarcasmInk.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+  --bs-body-bg: #f0a933;
+  --bs-body-color: #320d09;
+  --bs-body-font-family: Roboto, "Open Sans", Arial, sans-serif;
+
+
+  nav {
+    font-family: Sarcasm Ink, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  a, .highlight {
+    color: white !important;
+  }
+}
+
+.page-content {
+  max-width: 732px !important;
+  padding-top: 120px;
+  font-size: 1.1em;
+
+}
+
+.hr-img {
+  margin: auto;
+  padding-bottom: 1em;
+  width: 15% !important;
+}
+
+.legal {
+  font-size: 10px;
+}

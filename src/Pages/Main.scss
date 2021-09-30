@@ -1,0 +1,36 @@
+.page-content > {
+  .Row img {
+    max-width: 100%;
+  }
+  .hello {
+    #yogurt-main {
+      max-height: 350px;
+    }
+
+    font-family: Sarcasm Ink, serif;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+}
+
+.title {
+  font-family: Sarcasm Ink, serif;
+  font-weight: bold;
+
+  > .show-you {
+    color: #FCDE87;
+    font-size: 3em;
+  }
+
+  > .itmo-students {
+    font-size: 1.5em;
+    color: white;
+  }
+}
+
+div.team-member {
+  width: auto;
+  >img {
+    max-width: 200px;
+  }
+}
