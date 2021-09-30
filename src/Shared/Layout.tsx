@@ -38,7 +38,9 @@ export const Layout = ({children}: React.PropsWithChildren<{}>) => {
                     <img className="hr-img d-block" src="img/hr.png" alt="hr"/>
 
                     <p className="text-center">
-                        Данный информационный ресурс безвозмездно изготовлен
+                        <a href="https://github.com/YogurtTheHorse/elections/settings">
+                            Исходный код сайта.
+                        </a> Данный информационный ресурс безвозмездно изготовлен
                         командой кандидата в председатели совета обучающихся университета ИТМО Егора Жумикова.
                         Ответственным за публикацию и распространение материалов с информационного ресурса является Егор
                         Жумиков. Это произведение доступно по <a rel="license"
