@@ -4,13 +4,14 @@ import './Main.scss'
 
 type TeamMemberProps = {
     image: string;
-    sub: string;
+    link: string;
+    sub?: string;
 }
 
-const TeamMember = ({image, sub}: TeamMemberProps) => <div className="team-member">
+const TeamMember = ({image, sub, link}: TeamMemberProps) => <a className="team-member" href={link}>
     <img src={image} alt={sub}/>
-    <p className="text-center">{sub}</p>
-</div>;
+    {sub && <p className="text-center">{sub}</p>}
+</a>;
 
 export const MainPage = () => {
     return <Container className="page-content">
@@ -89,18 +90,19 @@ export const MainPage = () => {
             <p>Там даже можно найти нашу команду, вот они слева направо:</p>
         </Row>
         <Row className="d-flex justify-content-center">
-            <TeamMember image="img/portraits/fredikats.png" sub="Леша Ивницкий"/>
-            <TeamMember image="img/portraits/nikita.png" sub="Никита Черняк"/>
-            <TeamMember image="img/portraits/sasha.png" sub="Саша Блашенков"/>
-            <TeamMember image="img/portraits/arseniy_1.png" sub="Сеня Молодецкий"/>
-            <TeamMember image="img/portraits/annchouss.png" sub="Аня Мирная"/>
-            <TeamMember image="img/portraits/nastya.png" sub="Настя Тушканова"/>
-            <TeamMember image="img/portraits/yogurt.png" sub="Егор Жумиков"/>
+            <TeamMember image="img/portraits/fredikats.png" sub="Леша Ивницкий" link="https://github.com/fredikats"/>
+            <TeamMember image="img/portraits/nikita.png" sub="Никита Черняк" link="https://t.me/chernyaknikita"/>
+            <TeamMember image="img/portraits/sasha.png" sub="Саша Блашенков" link="https://trall.co"/>
+            <TeamMember image="img/portraits/arseniy_1.png" sub="Сеня Молодецкий" link="https://vk.com/orfac"/>
+            <TeamMember image="img/portraits/annchouss.png" sub="Аня Хохлова" link="https://t.me/annchouss"/>
+            <TeamMember image="img/portraits/nastya.png" sub="Настя Тушканова" link="https://vk.com/staszw"/>
+            <TeamMember image="img/portraits/yogurt.png" sub="Егор Жумиков" link="https://yogurtthehor.se"/>
         </Row>
         <Row>
             <p>
                 Если вам все это интересно, интересна наша команда и вы думаете, что все это важно – мы будем ждать ваш
-                решающий голос за меня (Егора) и мою команду на выборах с 19 по 21 октября. А еще очень важно рассказывать
+                решающий голос за меня (Егора) и мою команду на выборах с 19 по 21 октября. А еще очень важно
+                рассказывать
                 о нас своим знакомым.
             </p>
 
