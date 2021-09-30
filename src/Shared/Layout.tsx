@@ -38,7 +38,7 @@ export const Layout = ({children}: React.PropsWithChildren<{}>) => {
                     <img className="hr-img d-block" src="img/hr.png" alt="hr"/>
 
                     <p className="text-center">
-                        <a href="https://github.com/YogurtTheHorse/elections/settings">
+                        <a href="https://github.com/YogurtTheHorse/elections">
                             Исходный код сайта.
                         </a> Данный информационный ресурс безвозмездно изготовлен
                         командой кандидата в председатели совета обучающихся университета ИТМО Егора Жумикова.
