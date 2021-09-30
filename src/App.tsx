@@ -6,13 +6,14 @@ import {Layout} from "./Shared/Layout";
 import {MainPage} from "./Pages/Main";
 import {ShortPage} from "./Pages/Short";
 import { Switch } from 'react-router-dom';
+import {Placeholder} from "./Pages/Placeholder";
 
 function App() {
     return <Layout>
         <Switch>
-            <Route exact path='/' component={MainPage}/>
-            <Route exact path='/short' component={ShortPage}/>
-            <Route path="*" component={MainPage}/>
+            {/*<Route exact path='/' component={MainPage}/>*/}
+            {/*<Route exact path='/short' component={ShortPage}/>*/}
+            <Route path="*" component={Placeholder}/>
         </Switch>
     </Layout>;
 }
