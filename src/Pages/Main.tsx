@@ -96,6 +96,8 @@ export const MainPage = () => {
             <TeamMember image="img/portraits/arseniy_1.png" sub="Сеня Молодецкий" link="https://vk.com/orfac"/>
             <TeamMember image="img/portraits/annchouss.png" sub="Аня Хохлова" link="https://t.me/annchouss"/>
             <TeamMember image="img/portraits/nastya.png" sub="Настя Тушканова" link="https://vk.com/staszw"/>
+            <TeamMember image="img/portraits/lisa.png" sub="Лиза Кузенкова" link="https://vk.com/e1izabeth"/>
+            <TeamMember image="img/portraits/vika.png" sub="Вика Яковлева" link="https://t.me/viktoriya_yve"/>
             <TeamMember image="img/portraits/yogurt.png" sub="Егор Жумиков" link="https://yogurtthehor.se"/>
         </Row>
         <Row>
