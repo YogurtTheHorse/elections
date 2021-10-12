@@ -33,7 +33,7 @@ export const MainPage = () => {
 
         </Row>
         <Row className="title">
-            <p className="show-you text-center mb-0">Покажем вам</p>
+            <p className="show-you text-center mb-0">Откроем для вас</p>
             <p className="itmo-students text-center">ITMO.STUDENTS</p>
         </Row>
 
